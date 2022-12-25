@@ -1,0 +1,488 @@
+.buttons{
+    height: 50px;
+    padding-top: 17px;
+}
+
+@media screen and ((min-width: 730px) and (max-width: 1200px)){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 1000px;
+        height: 1100px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .amp{
+        color: red;
+        font-weight: 800;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .calories,
+    hr{
+        display: none;
+    }
+
+    .cake, 
+    .bisquit, 
+    .pie{
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 300px;
+        height: 265px;
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+
+    .cakes{
+        width: 1000px;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(3, 345px);
+        grid-template-rows: repeat(3, 305px);
+        position: absolute;
+        top: 180px;
+    }
+    
+    .name{
+        margin-left: 35px;
+        margin-top: 210px;
+        margin-bottom: 180px;
+    }
+    
+    .contacts{
+        display: inline-block;
+        width: 970px;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        position: absolute;
+        top: 1080px;
+    }
+
+    .copy{
+        position: absolute;
+        left: 780px;
+        top: 0px;
+    }
+    .link{
+        color:dodgerblue;
+        position: absolute;
+        top: 30px;
+    }
+    
+    .link::before{
+        content: '\2709';
+    }
+
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        width: 900px;
+        height: 80px;
+        background-color: initial;
+        text-align: center;
+    }
+    
+    .sidebar > nav{
+        display: none;
+    }
+
+    .buttons{
+        background-color: rgb(161, 161, 161);
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 200px;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(100, 100, 100);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .bisquit,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .cakes > .cake,
+    #bisquit:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .bisquit,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+
+    #bisquit:checked ~ .main > .cakes,
+    #pie:checked ~ .main > .cakes{
+        height: 600px;
+    }
+
+    #bisquit:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 470px;
+    }
+
+    #cake:checked ~ .main > .cakes,
+    #cake:checked ~ .main > .cakes{
+        height: 1040px;
+    }
+
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 780px;
+    }
+
+    #bisquit:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 500px;
+    }
+
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 820px;
+    }
+}
+
+@media screen and ((min-width: 320px) and (max-width: 730px)){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 670px;
+        height: 2175px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .amp{
+        color: red;
+        font-weight: 800;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .cake, 
+    .bisquit, 
+    .pie{
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px;
+        margin-left: 200px;
+        background-color: rgb(235, 235, 235);
+    }
+
+    .cake > p,
+    .bisquit > p,
+    .pie > p,
+    hr{
+        display: none;
+    }
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .cakes{
+        width: 710px;
+        height: 1845px;
+        display: grid;
+        margin: 0px 0px 10px 25px;
+        grid-template-columns: 200px;
+        grid-template-rows: 200px;
+        column-gap: 5px;
+        position: absolute;
+        top: 280px;
+    }
+    .contacts{
+        position: absolute;
+        top: 2140px;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link{
+        color:dodgerblue;
+        position: absolute;
+        top: 20px;
+    }
+    .copy{
+        position: absolute;
+        top: 50px;
+    }
+    
+    .link::before{
+        content: '\2709';
+    }
+
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 200px;
+        border: none;
+        width: 320px;
+        height: 160px;
+        background-color: initial;
+    }
+
+    .sidebar > nav{
+        display: none;
+    }
+    
+    .buttons{
+        background-color: rgb(161, 161, 161);
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(100, 100, 100);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .bisquit,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .cakes > .cake,
+    #bisquit:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .bisquit,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .cakes,
+    #pie:checked ~ .main > .cakes{
+        height: 600px;
+    }
+
+    #bisquit:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 700px;
+    }
+
+    #cake:checked ~ .main > .cakes,
+    #cake:checked ~ .main > .cakes{
+        height: 1040px;
+    }
+
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 1330px;
+    }
+
+    #bisquit:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 750px;
+    }
+
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 1370px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 1700px;
+        height: 1060px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .amp{
+        color: red;
+        font-weight: 800;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .cake, 
+    .bisquit, 
+    .pie{
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 385px;
+        height: 290px;
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    .bisquit{
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 385px;
+        height: 290px;
+        background-color: rgb(235, 235, 235);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+        margin-right: 20px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    
+    .cakes{
+        width: 1220px;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(3, 305px);
+        grid-auto-flow: inherit;
+        padding: inherit;
+    }
+    
+    .name{
+        margin-bottom: 180px;
+    }
+    
+    .calories{
+        margin-left: 25px;
+    }
+    
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .link{
+        color:dodgerblue;
+        margin-right: 1200px;
+    }
+    
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 1300px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        width: 400px;
+        height: 902px;
+        background-color: rgb(235, 235, 235);
+        text-align: center;
+    }
+    
+    .buttons{
+        background-color: rgb(161, 161, 161);
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        margin-left: 100px;
+        width: 200px;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(100, 100, 100);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .bisquit,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .cakes > .cake,
+    #bisquit:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .bisquit,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+}
